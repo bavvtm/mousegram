@@ -1,8 +1,9 @@
 # Welcome
 
 ![mousgram-flaticon](./docs/img/mousegram.png)
-**Mousegram use Telegram Bot API v5.3.0** 
 [![github-repo](https://img.shields.io/badge/Github-callmeumm-green.svg?style=for-the-badge&logo=github)](https://github.com/callmeumm/mousegram)
+
+**Mousegram use Telegram Bot API v5.3.0** 
 
 ### Example
 ```typescript
