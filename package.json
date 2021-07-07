@@ -9,7 +9,12 @@
     "generate": "nodemon .generator/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "mousegram",
+    "telegram",
+    "bot",
+    "api"
+  ],
   "author": "choirul-umam",
   "license": "MIT",
   "devDependencies": {
