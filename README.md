@@ -5,6 +5,11 @@
 
 **Mousegram use Telegram Bot API v5.3.0** 
 
+### Installation
+```bash
+npm install --save mousegram
+```
+
 ### Example
 ```typescript
 import { Mouse, Keyboard, InlineKeyboard } from "mousegram";
