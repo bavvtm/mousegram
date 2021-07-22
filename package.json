@@ -1,6 +1,6 @@
 {
   "name": "mousegram",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "bin/index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "@types/node-fetch": "^2.5.10",
     "nodemon": "^2.0.9",
     "ts-node": "^10.0.0",
+    "typedoc": "^0.21.4",
     "typescript": "^4.3.5"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 # Welcome
 
-![mousgram-flaticon](./docs/img/mouselogo.png)
+![mousgram-flaticon](./mouselogo.png)
 [![github-repo](https://img.shields.io/badge/Github-callmeumm-green.svg?style=for-the-badge&logo=github)](https://github.com/callmeumm/mousegram)
 
 **Mousegram use Telegram Bot API v5.3.0** 
@@ -11,6 +11,17 @@ npm install --save mousegram
 ```
 
 ### Example
+```typescript
+import { Mouse } from "mousegram";
+const bot = new Mouse('your-token', { polling: true });
+
+bot.cmd('start', (ctx) => ctx.reply('Hai...'));
+bot.text('halo', (ctx) => ctx.reply('Halo Juga...'));
+bot.regex(/\/start/, (ctx) => ctx.reply('Selamat Datang'));
+
+```
+
+### Example with Methods
 ```typescript
 import { Mouse, Keyboard, InlineKeyboard } from "mousegram";
 const bot = new Mouse('your-token', { polling: true });
@@ -46,6 +57,27 @@ bot.on('callback_query', (ctx) => {
     console.log(ctx);
 });
 ```
+
+### Router
+```typescript
+bot.router([
+    {
+        path: '/test',
+        event: 'message',
+        action: (ctx) => {
+            ctx.reply('Testing-testing')
+        }
+    },
+    {
+        path: '/start',
+        event: 'message',
+        action: (ctx) => {
+            ctx.reply('Halooo Selamat Datang...')
+        }
+    }
+]);
+```
+
 ### License
 
 MIT
